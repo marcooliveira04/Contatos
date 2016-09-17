@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/materialize.min.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<meta charset="UTF-8"/>
+        <title>Contatos</title>
+    </head>
+    <body>
+		 <div class="navbar-fixed">
+		  <nav>
+			<div class="nav-wrapper">
+			  <a href="#" class="brand-logo right">Logo</a>
+			  <ul id="nav-mobile" class="left hide-on-med-and-down">
+				<li><a href="#adicionar">Adicionar</a></li>
+				<li><a href="#listar">Listar</a></li>
+			  </ul>
+			</div>
+		  </nav>
+		</div>
+		
+		<div class="row content">
+			<div id="adicionar" class="section">
+				<div class="row">
+					<div id="registraContato" class="col s6">
+						<div class="row">
+							<div class="input-field">
+								<input placeholder="Nome" id="nome" type="text" class="validate">
+							</div>
+							<div class="input-field">
+								<input id="telefone" type="text" class="validate">
+							</div>
+							<button class="btn waves-effect waves-light right" id="novoContato" name="action">Enviar<i class="material-icons right">send</i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+			<button class="btn waves-effect waves-light center" id="listaContatos" name="action">Listar<i class="material-icons-right">send</i></button>
+			<div id="contato" >
+				
+			</div>
+		
+
+        <script type="text/javascript" src="js/jscommands.js"></script>
+        <script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="cordova.js"></script>
+    </body>
+</html>
